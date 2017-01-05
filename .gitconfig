@@ -1,0 +1,28 @@
+[user]
+    name = Jonas Heinrich
+    mail = heinrich_jonas@web.de
+    email = heinrich_jonas@web.de
+[credential]
+    helper = osxkeychain
+[core]
+    excludesfile = ~/.gitignore_global
+	editor = vim
+[color]
+    ui = true
+[alias]
+    lg = log --graph --pretty=format:'%Cred%h%Creset %Cblue(%aN)%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    chp = cherry-pick
+    st = status
+    co = checkout
+    merge = merge --no-ff
+    pull = pull --no-ff
+    br = branch
+    bra = branch -a
+    shown = show --name-only
+    commita = commit --amend
+[push]
+    default = tracking
+[filter "media"]
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
