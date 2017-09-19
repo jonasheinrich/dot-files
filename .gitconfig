@@ -20,6 +20,8 @@
     bra = branch -a
     shown = show --name-only
     commita = commit --amend
+    rebasec = rebase --continue
+    diffs = diff --staged
 [push]
     default = tracking
 [filter "media"]
