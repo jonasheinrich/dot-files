@@ -14,3 +14,6 @@ PS1="\[\033[0;33m\]\w\[\033[m\]\[$MAGENTA\]\$(parse_git_branch)\[$WHITE\]\$ "
 
 # autocomplete ssh hosts
 complete -o default -o nospace -W "$(/usr/bin/env ruby -ne 'puts $_.split(/[,\s]+/)[1..-1].reject{|host| host.match(/\*|\?/)} if $_.match(/^\s*Host\s+/);' < $HOME/.ssh/config)" scp sftp ssh
+
+HISTSIZE=999999
+HISTFILESIZE=999999
