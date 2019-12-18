@@ -20,6 +20,7 @@
     bra = branch -a
     shown = show --name-only
     commita = commit --amend
+    commitaf = commit --amend --no-edit
     rebasec = rebase --continue
     diffs = diff --staged
 [push]
